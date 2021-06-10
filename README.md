@@ -1,3 +1,8 @@
+# Note application
+A simple note application where user can create, edit, delete and swap notes.
+
+## Check it out [here](https://note-app-playbook.vercel.app/)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
