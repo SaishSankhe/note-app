@@ -1,38 +1,62 @@
+body {
+	color: #424242;
+}
+
 .App {
-  text-align: center;
+	text-align: center;
+	margin: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.note-item {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	border: 2px solid transparent;
+	margin: 10px;
+	padding: 15px;
+	border-radius: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.note-item:hover {
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.note-selected {
+	border: 2px solid #424242;
 }
 
-.App-link {
-  color: #61dafb;
+.myForm {
+	margin: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.grid-6 {
+	margin: 10px 4%;
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-template-rows: repeat(auto, 1fr);
+	grid-gap: 20px;
+}
+
+.buttons {
+	display: flex;
+	justify-content: space-around;
+	align-content: flex-end;
+}
+
+.note-head {
+	font-weight: bold;
+}
+
+button {
+	background-color: #424242;
+	border: 2px solid transparent;
+	color: #fcfcfc;
+	border-radius: 5px;
+	padding: 5px 10px;
+	cursor: pointer;
+}
+
+input {
+	padding: 5px 10px;
+	margin: 20px 10px;
 }
